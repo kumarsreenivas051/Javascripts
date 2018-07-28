@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>
+		Flight Details
+	</title>
+	<script type="text/javascript">
+		var flight={
+			airline: "Oceanic",
+			number:454,
+			departure:{
+				IATA:"SYD",
+				time:"2004-09-22 14:55",
+				city:"Sydney"
+			},
+			arrival:{
+				IATA:"LOS",
+				time:"2004-09-22 16:55",
+				city:"Los Angeles"
+			}
+			};
+			function fl()
+			{
+				alert(flight.departure.time);
+	        }
+	</script>
+</head>
+<body>
+	<h1>Flight departure details</h1>
+	<button id="dpt" onclick="fl()">Click here!</button>
+</body>
+</html>
