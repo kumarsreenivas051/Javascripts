@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>
+            Student details
+        </title>
+        <script>
+            var student=
+            {
+            sid: function (id){
+                this.id=id;
+               return this.id;
+            },
+          sname:function(name){
+            this.name=name;
+            return this.name;
+          },
+          sbranch:function(branch)
+          {
+            this.branch=branch;
+            return branch;
+          }
+
+    };
+     function f(){
+          var result="";
+          result+="Name:"+" "+student.sname("kumar")+"<br>";
+          result+="     "+"Id:"+" "+student.sid("12")+"<br>";
+          result+="     "+"Branch:"+" "+student.sbranch("CSE");
+          
+         document.getElementById('i').innerHTML=result;
+
+     }
+        </script>
+    </head>
+    <body>
+        <center><h1>Student details</h1></center>
+        <table>
+            <tr>
+            <td>
+        
+        <label>Show objects
+            </label>
+        </td>
+        <td>
+            <button id="pleaseinvokeobject" onclick=f()>Click here</button>
+        </td>
+        <td>
+            <label id="i"></label>
+        </td>
+            </tr>
+        </table>
+      <!--<button id="sub" onclick="f()">Click here!</button>-->
+      
+    </body>
+
+</html>
